@@ -1,5 +1,4 @@
-## Together these functions will cache the inverse of a matrix. This is 
-## written for Week 3's assignment in the R Programming couse by 
+## This is written for Week 3's assignment in the R Programming couse by 
 ## zacsentell
 
 
@@ -26,7 +25,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## cache
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'invs <- NULL
+        ## Return a matrix that is the inverse of 'x'
 cacheSolve <- function(x, ...) {
     invs <- x$getinverse()
     if (!is.null(invs)) {
@@ -37,4 +36,4 @@ cacheSolve <- function(x, ...) {
     invs <- solve(matrix, ...)
     x$setinverse(invs)
     return(invs)
-  }
+}
